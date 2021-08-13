@@ -107,28 +107,41 @@
             id="section04_img"
           />
         </div>
+        <div class="section-04__video">
+          <p id="section04-title" class="title">¿Y si prendemos la parrilla?</p>
+          <p id="section04-subtitle" class="subtitle">
+            Todas la terrazas <br />
+            con mesón y campana <br />
+            para parrillas.
+          </p>
+          <video
+            muted
+            playsinline
+            autoplay
+            loop
+            preload="auto"
+            class="section-bg"
+          >
+            <source src="~/assets/img/video03.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
       <div class="section section05-container" id="section05">
         <div class="section-05">
-          <div class="section05_video">
-            <video
-              muted
-              playsinline
-              autoplay
-              loop
-              preload="auto"
-              class="section-bg"
-              id="section05_video"
-            >
-              <source src="~/assets/img/video02.mp4" type="video/mp4" />
-            </video>
-            <p id="section05_video-text" class="title">¿Hagamos un picnic?</p>
-          </div>
-          <div class="section05_img">
-            <img src="~/assets/img/12.jpg" id="section05_img" />
-            <p id="section05_img-text" class="subtitle">
-              Rodeado de plazas y áreas verdes
-            </p>
+          <img
+            class="section-05_img02"
+            src="~/assets/img/08.jpg"
+            id="section-05_img02"
+          />
+          <div class="section05_img" id="section05_img">
+            <img src="~/assets/img/07.jpg" class="section-bg" id="section05_img-img" />
+            <div id="section05_text" class="section05__text">
+              <p class="title">Cada día</p>
+              <p class="subtitle">
+                un sabor distinto
+              </p>
+              <p class="downgrade">Cocinas abiertas y equipadas</p>
+            </div>
           </div>
         </div>
       </div>
@@ -334,7 +347,19 @@ export default {
       tl.to("#section-03_subtitle", 2, { left: "100%" }, 16);
       tl.to("#section-03_subtitle02", 2, { left: "15%" }, 16);
       tl.to("#section03", 2, { top: "-100%" }, 20);
-      
+      tl.to(
+        "#section04_img",
+        2,
+        { height: "40%", width: "120%", left: "-10%" },
+        22
+      );
+      tl.to("#section04-title", 2, { bottom: "35%" }, 23);
+      tl.to("#section04-subtitle", 2, { bottom: "15%" }, 23);
+      tl.to("#section04", 2, { top: "-100%" }, 26);
+      tl.to("#section05_text", 2, { bottom: "10%" }, 28);
+      tl.to("#section-05_img02", 2, { left: "0%" }, 30);
+      tl.to("#section05_img-img", 6, { right: "-100%" }, 30);
+      tl.to("#section05", 2, { top: "-100%" }, 38);
 
       const scene = this.$scrollmagic
         .scene({
@@ -816,15 +841,48 @@ body {
   z-index: 1;
 }
 
+.section04-container {
+  display: grid;
+  grid-template-rows: 30% 70%;
+}
+
 .section04-container .section-04 img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
-  object-position: 0 0;
-  filter: brightness(0.8);
+  position: absolute;
+  left: 0%;
+  height: 30%;
+}
+.section04-container .section-04__video .section-bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 0;
+  filter: brightness(0.5);
+}
+
+.section04-container .section-04__video .title,
+.section04-container .section-04__video .subtitle {
+  color: #fff;
+  position: absolute;
+  left: 10%;
+  width: 80%;
+}
+.section04-container .section-04__video .title {
+  font-weight: bold;
+  font-size: 40px;
+  bottom: -35%;
+  line-height: 1;
+}
+
+.section04-container .section-04__video .subtitle {
+  bottom: -15%;
+  font-weight: lighter;
+  width: 100%;
+  left: 0;
+  font-size: 32px;
+  line-height: 1;
 }
 
 .section05-container .section-bg {
@@ -846,39 +904,17 @@ body {
   left: 0;
   z-index: 1;
 }
-.section05-container .section-05 .section05_video {
-  width: 100%;
-  height: 70%;
-  position: relative;
-}
-.section05-container .section-05 #section05_video {
-  height: 100%;
-}
-.section05-container .section-05 #section05_video-text {
+.section05-container .section-05 .section-05_img02 {
+  width: 60%;
+  height: 30%;
+  object-fit: cover;
   position: absolute;
-  bottom: -50%;
-  left: 5%;
-  color: #fff;
-  width: 90%;
-  font-size: 60px;
-  text-align: center;
-  font-weight: 800;
-  line-height: 0.9;
-}
-.section05-container .section-05 #section05_img-text {
-  position: absolute;
-  bottom: -50%;
-  width: 80%;
-  left: 10%;
-  color: #fff;
-  font-size: 36px;
-  font-weight: 300;
-  text-align: center;
-  line-height: 1;
+  top: 0;
+  left: -60%;
 }
 .section05-container .section-05 .section05_img {
   width: 100%;
-  height: 30%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   position: absolute;
@@ -887,18 +923,35 @@ body {
 }
 .section05-container .section-05 #section05_text {
   position: absolute;
-  top: 100%;
+  bottom: -40%;
   width: 80%;
-  height: 30%;
   left: 10%;
   display: grid;
-  grid-template-rows: repeat(2, min-content);
   row-gap: 10px;
   justify-items: center;
   align-items: center;
+  color: #fff;
+}
+.section05-container .section-05 #section05_text .title {
+  font-weight: lighter;
+  font-size: 30px;
+}
+.section05-container .section-05 #section05_text .subtitle {
+  font-weight: bolder;
+  font-size: 70px;
+  line-height: 1;
+}
+.section05-container .section-05 #section05_text .downgrade{
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1;
 }
 .section05-container .section-05 .section05_img img {
-  width: 100%;
+  position: absolute;
+  right: 0;
+  left: auto;
+  width: auto;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   filter: brightness(0.6);
