@@ -147,20 +147,15 @@
       </div>
       <div class="section section06-container" id="section06">
         <div class="section-06">
-          <video
-            muted
-            playsinline
-            autoplay
-            loop
-            preload="auto"
-            class="section-bg"
-            id="section06_video"
-          >
-            <source src="~/assets/img/video03.mp4" type="video/mp4" />
-          </video>
+          <img src="~/assets/img/09.jpg" class="section-bg" id="section06-bg">
           <div id="section06_text">
-            <p class="title">Conectado con</p>
-            <p class="subtitle">una gran ciclovía</p>
+            <p class="title">Tu pieza, tu relajo</p>
+            <p class="subtitle">Amplio y cómodo dormitorio principal.</p>
+          </div>
+          <img src="~/assets/img/10.jpg" class="section-bg" id="section06-bg02">
+          <div id="section06_text02">
+            <p class="title">¡No molestar!</p>
+            <p class="subtitle">Baño con shower door.</p>
           </div>
         </div>
       </div>
@@ -360,6 +355,11 @@ export default {
       tl.to("#section-05_img02", 2, { left: "0%" }, 30);
       tl.to("#section05_img-img", 6, { right: "-100%" }, 30);
       tl.to("#section05", 2, { top: "-100%" }, 38);
+      tl.to("#section06-bg", 10, { left: "-300%" }, 40);
+      tl.to("#section06_text", 4, { opacity: "0", filter: "blur(10px)" }, 46);
+      tl.to("#section06-bg02", 6, { right: "-70%" }, 50);
+      tl.to("#section06_text02", 4, { opacity: "1", filter: "blur(0)" }, 52);
+      tl.to("#section06", 2, { top: "-100%" }, 56);
 
       const scene = this.$scrollmagic
         .scene({
@@ -959,6 +959,13 @@ body {
 .section06-container .section-bg {
   filter: brightness(0.6);
 }
+.section06-container #section06-bg{
+  left: 0;
+  z-index: 0;
+}.section06-container #section06-bg02{
+  right: 0%;
+  left: auto;
+}
 .section06-container .section-06 #section06_text {
   padding: 10px 0;
   position: absolute;
@@ -969,30 +976,49 @@ body {
   justify-items: center;
   align-items: center;
   align-content: center;
-  top: -300px;
-  left: 0;
-  width: 100%;
+  bottom: 10%;
+  left: 10%;
+    width: 80%;
   height: 300px;
+  text-align: left;
+  opacity: 1;
+  filter: blur(0);
+}
+.section06-container .section-06 #section06_text02{
+  padding: 10px 0;
+  position: absolute;
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  row-gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  bottom: 10%;
+  left: 10%;
+    width: 80%;
+  height: 300px;
+  text-align: left;
+  opacity: 0;
+  filter: blur(20px);
 }
 .section06-container .section-06 .title {
   color: #fff;
-  width: 90%;
-  font-size: 50px;
-  text-align: center;
+  width: 100%;
+  font-size: 48px;
   top: 5%;
-  left: 5%;
-  font-weight: 300;
+  left: 10%;
+  font-weight: 800;
   line-height: 0.9;
   margin: 0;
 }
 .section06-container .section-06 .subtitle {
   color: #fff;
-  width: 80%;
-  font-size: 70px;
-  font-weight: 800;
-  text-align: center;
+  width: 100%;
+  font-size: 30px;
   top: 20%;
   left: 10%;
+  font-weight: 300;
   line-height: 1;
   margin: 0;
 }
@@ -1552,12 +1578,6 @@ body {
   .section05-container .section-05 .title {
     font-size: 50px;
   }
-  .section06-container .section-06 .title {
-    font-size: 40px;
-  }
-  .section06-container .section-06 .subtitle {
-    font-size: 60px;
-  }
   .section08-container .section-08 .title {
     font-size: 50px;
   }
@@ -1622,7 +1642,7 @@ body {
     top: 21%;
   }
   .section06-container .section-06 .subtitle {
-    font-size: 50px;
+    font-size: 30px;
   }
   .section07-container .section-07 .subtitle {
     font-size: 40px;
