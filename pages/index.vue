@@ -134,7 +134,11 @@
             id="section-05_img02"
           />
           <div class="section05_img" id="section05_img">
-            <img src="~/assets/img/07.jpg" class="section-bg" id="section05_img-img" />
+            <img
+              src="~/assets/img/07.jpg"
+              class="section-bg"
+              id="section05_img-img"
+            />
             <div id="section05_text" class="section05__text">
               <p class="title">Cada día</p>
               <p class="subtitle">
@@ -147,12 +151,16 @@
       </div>
       <div class="section section06-container" id="section06">
         <div class="section-06">
-          <img src="~/assets/img/09.jpg" class="section-bg" id="section06-bg">
+          <img src="~/assets/img/09.jpg" class="section-bg" id="section06-bg" />
           <div id="section06_text">
             <p class="title">Tu pieza, tu relajo</p>
             <p class="subtitle">Amplio y cómodo dormitorio principal.</p>
           </div>
-          <img src="~/assets/img/10.jpg" class="section-bg" id="section06-bg02">
+          <img
+            src="~/assets/img/10.jpg"
+            class="section-bg"
+            id="section06-bg02"
+          />
           <div id="section06_text02">
             <p class="title">¡No molestar!</p>
             <p class="subtitle">Baño con shower door.</p>
@@ -172,38 +180,40 @@
           <source src="~/assets/img/video04.mp4" type="video/mp4" />
         </video>
         <div class="section-07">
-          <div class="section07_text">
-            <p class="title">54</p>
+          <p class="title" id="section07-title">
+            Grandes y chicos lo pasan <br /><strong>bien igual</strong>
+          </p>
+          <div class="section07_img" id="section07_img">
+            <img src="~/assets/img/11.jpg" />
             <p class="subtitle">
-              <strong>bicicleteros con taller</strong><br />en acceso al
-              edificio
+              salón gourmet y sala de niños.
             </p>
           </div>
-          <p class="downgrade" id="section07_downgrade">
-            Una ciudad que se pedalea es una mejor ciudad
-          </p>
         </div>
       </div>
       <div class="section section08-container" id="section08">
-        <video
-          muted
-          playsinline
-          autoplay
-          loop
-          preload="auto"
-          class="section-bg"
-          id="section08_video"
-        >
-          <source src="~/assets/img/video05.mp4" type="video/mp4" />
-        </video>
+        <img src="~/assets/img/12.jpg" id="section08_img" />
         <div class="section-08">
-          <img src="~/assets/img/14.jpg" />
-          <p class="title">¿Un cafecito?</p>
-          <p class="subtitle">
-            El corazón de <br />
-            Providencia <br />
-            está lleno de ellos.
-          </p>
+          <video
+            muted
+            playsinline
+            autoplay
+            loop
+            preload="auto"
+            class="section-bg"
+            id="section08_video"
+          >
+            <source src="~/assets/img/video05.mp4" type="video/mp4" />
+          </video>
+          <div id="section08-text">
+            <p class="title">¿Te motivaste?</p>
+            <p class="subtitle">
+              ¡Te esperamos en el gym!
+            </p>
+            <p class="downgrade" id="section08-downgrade">
+              Gimnasio equipado y abierto al jardín.
+            </p>
+          </div>
         </div>
       </div>
       <div class="section section09-container" id="section09">
@@ -218,54 +228,24 @@
         >
           <source src="~/assets/img/video06.mp4" type="video/mp4" />
         </video>
-        <div class="section-09">
-          <p class="title">¡Voy y vuelvo!</p>
+        <img src="~/assets/img/13.jpg" id="section09_img" />
+        <div class="section-09" id="section09_text">
+          <p class="title">Necesitar un respiro</p>
           <p class="subtitle">
-            Cercano a cafeterías, almacenes de barrios y servicios.
+            es natural
           </p>
+          <p class="downgrade">Disfruta de un gran jardín interior.</p>
         </div>
       </div>
       <div class="section section10-container" id="section10">
-        <img class="section-bg" id="section10_bg" src="~/assets/img/05.jpg" />
+        <p class="title" id="section10_title">Sin duda, te sentirás en casa</p>
         <div class="section-10" id="section10-content">
-          <img src="~/assets/img/11.jpg" />
-          <p class="title">La ciudad también se merece un descanso</p>
+          <img src="~/assets/img/15.jpg" id="section10_img01" />
+          <img src="~/assets/img/16.jpg" id="section10_img02" />
         </div>
+        <img class="section-bg" id="section10_bg" src="~/assets/img/14.jpg" />
       </div>
       <div class="section section11-container" id="section11">
-        <img class="section-bg" id="section11_bg" src="~/assets/img/15.jpg" />
-        <div class="section-11" id="section11-content">
-          <p class="title">Un City lover pone ojo en...</p>
-          <p class="subtitle">los detalles</p>
-          <p class="downgrade">Terminaciones de 1er nivel.</p>
-        </div>
-      </div>
-      <div class="section section12-container" id="section12">
-        <img class="section-bg" id="section12_bg" src="~/assets/img/04.jpg" />
-        <div class="section-12" id="section12_content">
-          <p class="title">Nada como</p>
-          <p class="subtitle">una buena ducha</p>
-          <p class="downgrade">Cómodo baño principal con shower door.</p>
-        </div>
-      </div>
-      <div class="section section13-container" id="section13">
-        <img class="section-bg" id="section13_bg" src="~/assets/img/08.jpg" />
-        <img id="section13_img" src="~/assets/img/10.jpg" />
-        <div id="section13_content" class="section-13">
-          <p class="title">Lleva la entretención a los más alto</p>
-          <p class="subtitle">Departamentos con terraza privada en rooftop.</p>
-        </div>
-      </div>
-      <div class="section section14-container" id="section14">
-        <img class="section-bg" id="section14_bg" src="~/assets/img/13.jpg" />
-        <img id="section14_img" src="~/assets/img/03.jpg" />
-        <p class="title" id="section14_title">Áreas comunes</p>
-        <div id="section14_content" class="section-14">
-          <p class="subtitle">Un City lover</p>
-          <p class="downgrade">sabe pasarlo bien</p>
-        </div>
-      </div>
-      <div class="section section15-container" id="section15">
         <video
           muted
           playsinline
@@ -273,34 +253,17 @@
           loop
           preload="auto"
           class="section-bg"
-          id="section15_video"
+          id="section09_video"
         >
           <source src="~/assets/img/video07.mp4" type="video/mp4" />
         </video>
-        <div class="section15_img01"></div>
-        <div class="section15_img02"></div>
-        <div class="section-15">
-          <img src="~/assets/img/07.jpg" />
-          <p class="title">Cuando la temperatura sube:</p>
-          <p class="subtitle" id="section15_subtitle">
-            ¡baja y refréscate!
-          </p>
-          <p class="downgrade" id="section15_downgrade">
-            Piscina, Quincho y Salón Gourmet.
-          </p>
-        </div>
-      </div>
-      <div class="section section16-container" id="section16">
-        <div class="section-16">
-          <p class="title">¿eres?</p>
-          <p class="subtitle">
-            #Citylover
-          </p>
+        <div class="section-11">
+         
           <img lazyload src="~/assets/img/logo-comuna.png" />
         </div>
       </div>
-      <div class="section section17-container" id="section17">
-        <div class="section-17">
+      <div class="section section12-container" id="section12">
+        <div class="section-12">
           <img lazyload class="logo" src="~/assets/img/bricsa.png" />
 
           <img lazyload class="bptl" src="~/assets/img/bptl.png" />
@@ -360,6 +323,23 @@ export default {
       tl.to("#section06-bg02", 6, { right: "-70%" }, 50);
       tl.to("#section06_text02", 4, { opacity: "1", filter: "blur(0)" }, 52);
       tl.to("#section06", 2, { top: "-100%" }, 56);
+      tl.to("#section07-title", 4, { top: "18%" }, 58);
+      tl.to("#section07_img", 4, { bottom: "10%" }, 58);
+      tl.to("#section07", 2, { top: "-100%" }, 64);
+      tl.to("#section08_img", 6, { "object-position": "100%" }, 68);
+      tl.to("#section08-text", 4, { left: "10%" }, 68);
+      tl.to("#section08-downgrade", 2, { opacity: "1", filter: "blur(0)" }, 72);
+      tl.to("#section08", 2, { top: "-100%" }, 78);
+      tl.to("#section09_img", 2, { top: "0%" }, 82);
+      tl.to("#section09_text", 2, { opacity: "1", filter: "blur(0)" }, 85);
+      tl.to("#section09", 2, { top: "-100%" }, 89);
+      tl.to("#section10_img01", 2, { left: "0%" }, 94);
+      tl.to("#section10_img02", 2, { right: "0%" }, 94);
+      tl.to("#section10_bg", 8, { "object-position": "100%" }, 91);
+      tl.to("#section10_title", 3, { opacity: "1", filter: "blur(0)" }, 94);
+      tl.to("#section10", 2, { top: "-100%" }, 100);
+      tl.to("#section11", 2, { top: "-100%" }, 104);
+      
 
       const scene = this.$scrollmagic
         .scene({
@@ -719,7 +699,7 @@ body {
 .section02-container .section02-video__text .title {
   color: #fff;
   width: 100%;
-  font-size: 70px;
+  font-size: 50px;
   text-align: left;
   top: 20%;
   font-weight: bold;
@@ -730,7 +710,7 @@ body {
   color: #fff;
   width: 100%;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 24px;
   text-align: left;
   top: 30%;
   line-height: 1.2;
@@ -776,7 +756,7 @@ body {
   position: absolute;
   color: #fff;
   width: 80%;
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
   top: 5%;
   left: 10%;
@@ -941,7 +921,7 @@ body {
   font-size: 70px;
   line-height: 1;
 }
-.section05-container .section-05 #section05_text .downgrade{
+.section05-container .section-05 #section05_text .downgrade {
   font-weight: 300;
   font-size: 30px;
   line-height: 1;
@@ -959,10 +939,11 @@ body {
 .section06-container .section-bg {
   filter: brightness(0.6);
 }
-.section06-container #section06-bg{
+.section06-container #section06-bg {
   left: 0;
   z-index: 0;
-}.section06-container #section06-bg02{
+}
+.section06-container #section06-bg02 {
   right: 0%;
   left: auto;
 }
@@ -978,13 +959,13 @@ body {
   align-content: center;
   bottom: 10%;
   left: 10%;
-    width: 80%;
+  width: 80%;
   height: 300px;
   text-align: left;
   opacity: 1;
   filter: blur(0);
 }
-.section06-container .section-06 #section06_text02{
+.section06-container .section-06 #section06_text02 {
   padding: 10px 0;
   position: absolute;
   display: grid;
@@ -996,7 +977,7 @@ body {
   align-content: center;
   bottom: 10%;
   left: 10%;
-    width: 80%;
+  width: 80%;
   height: 300px;
   text-align: left;
   opacity: 0;
@@ -1027,93 +1008,103 @@ body {
   width: 100%;
   filter: brightness(0.7);
 }
-.section07-container .section07_text {
-  width: 100%;
-  height: 60%;
+.section07-container .section07_img {
+  width: 70%;
+  height: 80%;
   position: absolute;
-  display: grid;
-  grid-template-rows: repeat(3, min-content);
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  align-items: center;
+  bottom: -100%;
+  left: 15%;
+  z-index: 1;
+}
+.section07-container .section07_img img {
+  position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
 }
 .section07-container .section-07 .title {
   color: #fff;
   width: 90%;
-  font-size: 230px;
+  font-size: 50px;
   text-align: center;
-  font-weight: 800;
+  font-weight: 100;
   line-height: 0.9;
+  position: absolute;
+  top: -100%;
+  left: 5%;
+  z-index: 2;
 }
 .section07-container .section-07 .subtitle {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
   color: #fff;
   width: 80%;
-  font-size: 60px;
-  font-weight: 300;
+  font-size: 30px;
+  font-weight: 100;
   text-align: center;
   line-height: 1;
 }
-.section07-container .section-07 .downgrade {
-  position: absolute;
-  bottom: -10%;
-  color: #fff;
-  width: 80%;
-  font-size: 26px;
-  font-weight: 300;
-  left: 10%;
-}
 .section08-container .section-bg {
-  position: absolute;
-  height: 100vh;
-  filter: brightness(0.7);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.6);
   z-index: 0;
+  left: initial;
+}
+.section08-container {
+  display: grid;
+  grid-template-rows: repeat(2, 50%);
 }
 .section08-container .section-08 {
-  position: absolute;
-  display: grid;
-  grid-template-rows: repeat(2, min-content);
-  row-gap: 10px;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  width: 80%;
-  height: 80%;
-  top: 10%;
-  left: 10%;
+  width: 100%;
+  height: 100%;
   color: #fff;
 }
-.section08-container .section-08 img {
+.section08-container #section08_img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: 0%;
   filter: brightness(0.7);
+}
+.section08-container .section-08 #section08-text {
   position: absolute;
-  left: 0;
-  top: 0;
+  width: 80%;
+  bottom: 8%;
+  left: -100%;
+  display: grid;
+  row-gap: 20px;
 }
 .section08-container .section-08 .title {
   color: #fff;
-  width: 90%;
-  font-size: 50px;
-  text-align: center;
-  font-weight: 800;
-  line-height: 1.1;
-  z-index: 1;
+  width: 100%;
+  font-size: 24px;
+  text-align: left;
+  font-weight: 100;
+  line-height: 1;
 }
 .section08-container .section-08 .subtitle {
   color: #fff;
-  width: 80%;
-  font-size: 24px;
-  font-weight: 300;
+  width: 100%;
+  font-size: 50px;
+  font-weight: 800;
+  text-align: left;
+  line-height: 0.8;
+}
+.section08-container .section-08 .downgrade {
+  color: #fff;
+  width: 100%;
+  font-size: 26px;
+  font-weight: 100;
   text-align: center;
-  line-height: 1.2;
-  z-index: 1;
+  line-height: 1;
+  opacity: 0;
+  filter: blur(20px);
 }
 .section09-container .section-bg {
   position: absolute;
@@ -1131,25 +1122,44 @@ body {
   align-items: center;
   align-content: center;
   width: 90%;
-  height: 80%;
-  top: 10%;
+  height: 70%;
+  top: 30%;
   left: 5%;
   color: #fff;
+  opacity: 0;
+  filter: blur(20px);
+}
+.section09-container #section09_img {
+  position: absolute;
+  width: 90%;
+  height: 30%;
+  object-fit: cover;
+  left: 5%;
+  top: 35%;
 }
 .section09-container .section-09 .title {
   color: #fff;
-  width: 90%;
-  font-size: 70px;
+  width: 100%;
+  font-size: 50px;
   text-align: center;
-  font-weight: 800;
+  font-weight: 100;
   line-height: 1.1;
   z-index: 1;
 }
 .section09-container .section-09 .subtitle {
   color: #fff;
-  width: 80%;
-  font-size: 36px;
-  font-weight: 300;
+  width: 100%;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+  z-index: 1;
+}
+.section09-container .section-09 .downgrade {
+  color: #fff;
+  width: 90%;
+  font-size: 30px;
+  font-weight: 100;
   text-align: center;
   line-height: 1.2;
   z-index: 1;
@@ -1165,333 +1175,58 @@ body {
 }
 .section10-container .section-10 {
   position: absolute;
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  width: 80%;
-  height: 100%;
-  top: 0;
-  left: 10%;
-  color: #fff;
-  opacity: 0;
-  filter: blur(20px);
-}
-.section10-container .section-10 img {
-  filter: brightness(0.8);
   width: 100%;
-  height: 300px;
-  object-fit: cover;
-  grid-column: 1/2;
-  grid-row: 1/2;
+  height: 30%;
+  bottom: 0;
+  left: 0%;
 }
-.section10-container .section-10 .title {
+.section10-container .section-10 #section10_img01,
+.section10-container .section-10 #section10_img02 {
+  position: absolute;
+  filter: brightness(0.8);
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+.section10-container .section-10 #section10_img01{
+  left: -100%;
+}
+.section10-container .section-10 #section10_img02{
+right: -100%;
+}
+.section10-container .title {
+  position: absolute;
+  width: 70%;
+  left: 5%;
+  top: 10%;
   color: #fff;
-  width: 90%;
-  font-size: 60px;
-  text-align: center;
+  font-size: 50px;
+  text-align: left;
   font-weight: 800;
   line-height: 0.9;
-  grid-column: 1/2;
-  grid-row: 1/2;
-  z-index: 1;
-}
-.section10-container .section-10 .subtitle {
-  position: absolute;
-  color: #fff;
-  width: 80%;
-  font-size: 26px;
-  font-weight: 300;
-  text-align: center;
-  bottom: 10%;
-  left: 10%;
-  line-height: 1;
-  filter: blur(20px);
   opacity: 0;
+  filter: blur(20px);
 }
+
 .section11-container .section-bg {
+  left: 0;
+  width: 100%;
   filter: brightness(0.7);
-  right: -100%;
-  left: auto;
 }
 .section11-container .section-11 {
-  color: #fff;
-  display: grid;
-  padding: 30px;
-  position: absolute;
-  width: 100%;
-  bottom: 20%;
-  left: 0;
-}
-.section11-container .section-11 .title {
-  z-index: 2;
-  width: 80%;
-  justify-self: flex-start;
-  text-align: left;
-  font-size: 44px;
-  font-weight: 400;
-}
-.section11-container .section-11 .subtitle {
-  z-index: 2;
-  width: 70%;
-  justify-self: flex-end;
-  font-size: 64px;
-  font-weight: 800;
-  text-align: left;
-  line-height: 1;
-}
-.section11-container .section-11 .downgrade {
-  z-index: 2;
-  font-size: 20px;
-  width: 70%;
-  justify-self: flex-end;
-  text-align: left;
-}
-.section12-container .section-bg {
-  right: -30%;
-  left: auto;
-  object-position: 100%;
-  filter: brightness(0.7);
-}
-.section12-container .section-12 {
-  display: grid;
-  grid-template-rows: repeat(3, min-content);
-  row-gap: 10px;
-  padding: 20px;
-  background: #fff;
-  width: 60%;
-  height: min-content;
-  color: #444;
-  z-index: 2;
-  position: absolute;
-  left: 0;
-  bottom: 5%;
-  opacity: 0;
-  filter: blur(20px);
-}
-.section12-container .section-12 .title {
-  font-size: 40px;
-  font-weight: 300;
-  line-height: 0.9;
-}
-.section12-container .section-12 .subtitle {
-  font-size: 60px;
-  font-weight: 800;
-  line-height: 0.9;
-}
-.section12-container .section-12 .downgrade {
-  font-size: 17px;
-  font-weight: 400;
-}
-.section13-container .section-bg {
-  position: absolute;
-  height: 100%;
-  filter: brightness(0.7);
-  left: 0;
-}
-.section13-container .section-13 {
-  color: #fff;
-  display: grid;
-  height: 100vh;
-  grid-template-rows: repeat(2, min-content);
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  justify-items: center;
-  row-gap: 10px;
-  opacity: 0;
-  filter: blur(20px);
-}
-.section13-container #section13_img {
-  position: absolute;
-  top: -40%;
-  left: 15%;
-  width: 70%;
-  height: 250px;
-  object-fit: cover;
-  filter: brightness(0.7);
-}
-.section13-container .section-13 .title {
-  z-index: 2;
-  width: 80%;
-  font-size: 38px;
-  font-weight: 800;
-  line-height: 1;
-}
-.section13-container .section-13 .subtitle {
-  z-index: 2;
-  width: 80%;
-  font-size: 29px;
-  font-weight: 300;
-  line-height: 0.9;
-}
-.section14-container {
-  background: #fff;
-}
-.section14-container .section-bg {
-  height: 90vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-}
-.section14-container .section-14 {
-  color: #fff;
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: repeat(2, min-content);
-  grid-template-columns: 100%;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  align-items: center;
-}
-.section14-container #section14_img {
-  width: 60%;
-  height: 30%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  object-fit: cover;
-  object-position: center;
-}
-.section14-container .title {
-  z-index: 2;
-  position: absolute;
-  width: 80%;
-  left: 0;
-  top: -9%;
-  font-size: 170px;
-  font-weight: 800;
-  line-height: 1;
-  white-space: nowrap;
-  color: #e40524;
-}
-.section14-container .section-14 .subtitle {
-  z-index: 2;
-  width: 90%;
-  font-size: 60px;
-  text-align: center;
-  font-weight: 300;
-}
-.section14-container .section-14 .downgrade {
-  z-index: 2;
-  width: 90%;
-  font-size: 60px;
-  text-align: center;
-  font-weight: 800;
-  line-height: 1;
-}
-.section15-container .section-bg {
-  height: 100vh;
-}
-.section15-container .section-15 {
-  color: #fff;
-  position: absolute;
-  row-gap: 20px;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  width: 80%;
-  height: 80%;
-  top: 10%;
-  left: 10%;
-}
-.section15-container .section-15 img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  object-fit: cover;
-  object-position: right;
-  filter: brightness(0.7);
-}
-
-.section15-container .section15_img01 {
-  background-image: url("~/assets/img/03.jpg");
-  background-size: 200%;
-  background-position: bottom right;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40%;
-  z-index: 2;
-  height: 150px;
-  object-fit: cover;
-  filter: brightness(0.7);
-}
-
-.section15-container .section15_img02 {
-  background-image: url("~/assets/img/09.jpg");
-  background-size: 200%;
-  background-position: bottom right;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 40%;
-  z-index: 2;
-  height: 150px;
-  object-fit: cover;
-  filter: brightness(0.7);
-}
-.section15-container .title {
-  z-index: 2;
-  width: 80%;
-  font-size: 40px;
-  font-weight: 300;
-  line-height: 1;
-  align-self: flex-start;
-  position: absolute;
-  top: 20%;
-  left: 10%;
-}
-.section15-container .section-15 .subtitle {
-  z-index: 2;
-  width: 80%;
-  font-size: 50px;
-  text-align: center;
-  font-weight: 800;
-  position: absolute;
-  bottom: -50%;
-  left: 10%;
-}
-.section15-container .section-15 .downgrade {
-  z-index: 2;
-  width: 80%;
-  font-size: 30px;
-  text-align: center;
-  font-weight: 400;
-  line-height: 1;
-  position: absolute;
-  bottom: -50%;
-  left: 10%;
-}
-.section16-container .section-bg {
-  left: 0;
-  width: 100%;
-  filter: brightness(0.7);
-}
-.section16-container .section-16 {
   color: #fff;
   width: 80%;
   height: 70%;
   position: absolute;
   top: 10%;
   left: 10%;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: min-content min-content 30%;
-  row-gap: 20px;
+  display: flex;
   justify-content: center;
   justify-items: center;
   align-content: flex-end;
   align-items: center;
 }
-.section16-container .section-16 .title {
+.section11-container .section-11 .title {
   color: #fff;
   width: 100%;
   font-size: 50px;
@@ -1499,7 +1234,7 @@ body {
   font-weight: 800;
   line-height: 0.9;
 }
-.section16-container .section-16 .subtitle {
+.section11-container .section-11 .subtitle {
   color: #fff;
   width: 100%;
   font-size: 60px;
@@ -1507,15 +1242,15 @@ body {
   text-align: center;
   line-height: 1;
 }
-.section16-container .section-16 img {
+.section11-container .section-11 img {
   width: 50%;
   align-self: flex-end;
 }
-.section17-container {
+.section12-container {
   background: #e40524;
   display: flex;
 }
-.section17-container .section-17 {
+.section12-container .section-12 {
   display: grid;
   height: 100%;
   grid-template-columns: 100%;
@@ -1527,10 +1262,10 @@ body {
   align-content: center;
   align-self: center;
 }
-.section17-container .section-17 .logo {
+.section12-container .section-12 .logo {
   width: 60%;
 }
-.section17-container .section-17 .bptl {
+.section12-container .section-12 .bptl {
   width: 40%;
 }
 
@@ -1577,15 +1312,6 @@ body {
   }
   .section05-container .section-05 .title {
     font-size: 50px;
-  }
-  .section08-container .section-08 .title {
-    font-size: 50px;
-  }
-  .section08-container .section-08 .subtitle {
-    font-size: 24px;
-  }
-  .section09-container .section-09 .subtitle {
-    font-size: 26px;
   }
   .section10-container .section-10 .title {
     font-size: 50px;
