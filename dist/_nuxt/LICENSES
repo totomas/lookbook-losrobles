@@ -1,4 +1,11 @@
 /*!
+ * vue-simple-progress v1.1.1 (https://github.com/dzwillia/vue-simple-progress)
+ * (c) 2019 David Z. Williams
+ * Released under the MIT License.
+ */
+
+
+/*!
  * ScrollMagic v2.0.7 (2019-05-07)
  * The javascript library for magical scroll interactions.
  * (c) 2019 Jan Paepke (@janpaepke)
@@ -76,13 +83,6 @@
 /*!
  * vue-no-ssr v1.1.1
  * (c) 2018-present egoist <0x142857@gmail.com>
- * Released under the MIT License.
- */
-
-
-/*!
- * vue-simple-progress v1.1.1 (https://github.com/dzwillia/vue-simple-progress)
- * (c) 2019 David Z. Williams
  * Released under the MIT License.
  */
 
