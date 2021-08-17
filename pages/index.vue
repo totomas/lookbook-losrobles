@@ -2,7 +2,7 @@
   <div>
     <div class="wrapper">
       <div class="loading" v-if="isLoading">
-        <img lazyload src="../assets/img/logo-comuna.png" />
+        <img lazyload src="~/assets/img/logo-comuna.png" />
         <progress-bar
           class="loadingBar"
           bar-color="#fff"
@@ -15,7 +15,7 @@
       </div>
       <div class="instructions" v-show="isCover">
         <p>Disfruta una navegación única, deslizando hacia abajo</p>
-        <img src="../assets/img/scroll.png" />
+        <img src="~/assets/img/scroll.png" />
         <button class="instructions_btn" @click="isCover = !isCover">
           Empezar a navegar
         </button>
@@ -23,11 +23,11 @@
       <span id="bricsa-square" class="bricsa-square"></span>
       <div class="section section01-container" id="section01">
         <div class="section-01">
-          <img id="section-bg01" src="../assets/img/01.jpg" />
+          <img id="section-bg01" src="~/assets/img/01.jpg" />
           <img
             lazyload
             class="section-logo"
-            src="../assets/img/logo-comuna.png"
+            src="~/assets/img/logo-comuna.png"
           />
           <div class="section01_text">
             <p class="call">
@@ -39,7 +39,7 @@
             </p>
           </div>
           <p id="section1_conectado" class="uptext">Conectado</p>
-          <img id="section-bg02" src="../assets/img/02.jpg" />
+          <img id="section-bg02" src="~/assets/img/02.jpg" />
         </div>
       </div>
       <div class="section section02-container" id="section02">
@@ -58,11 +58,11 @@
             preload="auto"
             class="section-bg"
           >
-            <source src="../assets/img/video01.mp4" type="video/mp4" />
+            <source src="~/assets/img/video01.mp4" type="video/mp4" />
           </video>
         </div>
         <div class="section02-img" id="section-02">
-          <img id="section02-img" src="../assets/img/03.jpg" />
+          <img id="section02-img" src="~/assets/img/03.jpg" />
         </div>
       </div>
       <div class="section section03-container" id="section03">
@@ -75,10 +75,10 @@
           class="section-bg"
           id="section03_bg"
         >
-          <source src="../assets/img/video02.mp4" type="video/mp4" />
+          <source src="~/assets/img/video02.mp4" type="video/mp4" />
         </video>
         <img
-          src="../assets/img/05.jpg"
+          src="~/assets/img/05.jpg"
           class="section03_bg02"
           id="section03_bg02"
         />
@@ -93,7 +93,7 @@
             A pasos de los lugares que te gustan.
           </p>
           <img
-            src="../assets/img/04.jpg"
+            src="~/assets/img/04.jpg"
             class="section-03_02-img"
             id="section-03_02-img"
           />
@@ -102,7 +102,7 @@
       <div class="section section04-container" id="section04">
         <div class="section-04">
           <img
-            src="../assets/img/06.jpg"
+            src="~/assets/img/06.jpg"
             class="section04_img"
             id="section04_img"
           />
@@ -122,7 +122,7 @@
             preload="auto"
             class="section-bg"
           >
-            <source src="../assets/img/video03.mp4" type="video/mp4" />
+            <source src="~/assets/img/video03.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
@@ -130,12 +130,12 @@
         <div class="section-05">
           <img
             class="section-05_img02"
-            src="../assets/img/08.jpg"
+            src="~/assets/img/08.jpg"
             id="section-05_img02"
           />
           <div class="section05_img" id="section05_img">
             <img
-              src="../assets/img/07.jpg"
+              src="~/assets/img/07.jpg"
               class="section-bg"
               id="section05_img-img"
             />
@@ -151,13 +151,13 @@
       </div>
       <div class="section section06-container" id="section06">
         <div class="section-06">
-          <img src="../assets/img/09.jpg" class="section-bg" id="section06-bg" />
+          <img src="~/assets/img/09.jpg" class="section-bg" id="section06-bg" />
           <div id="section06_text">
             <p class="title">Tu pieza, tu relajo</p>
             <p class="subtitle">Amplio y cómodo dormitorio principal.</p>
           </div>
           <img
-            src="../assets/img/10.jpg"
+            src="~/assets/img/10.jpg"
             class="section-bg"
             id="section06-bg02"
           />
@@ -177,14 +177,14 @@
           class="section-bg"
           id="section07_video"
         >
-          <source src="../assets/img/video04.mp4" type="video/mp4" />
+          <source src="~/assets/img/video04.mp4" type="video/mp4" />
         </video>
         <div class="section-07">
           <p class="title" id="section07-title">
             Grandes y chicos lo pasan <br /><strong>bien igual</strong>
           </p>
           <div class="section07_img" id="section07_img">
-            <img src="../assets/img/11.jpg" />
+            <img src="~/assets/img/11.jpg" />
             <p class="subtitle">
               salón gourmet y sala de niños.
             </p>
@@ -192,7 +192,7 @@
         </div>
       </div>
       <div class="section section08-container" id="section08">
-        <img src="../assets/img/12.jpg" id="section08_img" />
+        <img src="~/assets/img/12.jpg" id="section08_img" />
         <div class="section-08">
           <video
             muted
@@ -203,7 +203,7 @@
             class="section-bg"
             id="section08_video"
           >
-            <source src="../assets/img/video05.mp4" type="video/mp4" />
+            <source src="~/assets/img/video05.mp4" type="video/mp4" />
           </video>
           <div id="section08-text">
             <p class="title">¿Te motivaste?</p>
@@ -226,9 +226,9 @@
           class="section-bg"
           id="section09_video"
         >
-          <source src="../assets/img/video06.mp4" type="video/mp4" />
+          <source src="~/assets/img/video06.mp4" type="video/mp4" />
         </video>
-        <img src="../assets/img/13.jpg" id="section09_img" />
+        <img src="~/assets/img/13.jpg" id="section09_img" />
         <div class="section-09" id="section09_text">
           <p class="title">Necesitar un respiro</p>
           <p class="subtitle">
@@ -240,10 +240,10 @@
       <div class="section section10-container" id="section10">
         <p class="title" id="section10_title">Sin duda, te sentirás en casa</p>
         <div class="section-10" id="section10-content">
-          <img src="../assets/img/15.jpg" id="section10_img01" />
-          <img src="../assets/img/16.jpg" id="section10_img02" />
+          <img src="~/assets/img/15.jpg" id="section10_img01" />
+          <img src="~/assets/img/16.jpg" id="section10_img02" />
         </div>
-        <img class="section-bg" id="section10_bg" src="../assets/img/14.jpg" />
+        <img class="section-bg" id="section10_bg" src="~/assets/img/14.jpg" />
       </div>
       <div class="section section11-container" id="section11">
         <video
@@ -255,18 +255,18 @@
           class="section-bg"
           id="section09_video"
         >
-          <source src="../assets/img/video07.mp4" type="video/mp4" />
+          <source src="~/assets/img/video07.mp4" type="video/mp4" />
         </video>
         <div class="section-11">
          
-          <img lazyload src="../assets/img/logo-comuna.png" />
+          <img lazyload src="~/assets/img/logo-comuna.png" />
         </div>
       </div>
       <div class="section section12-container" id="section12">
         <div class="section-12">
-          <img lazyload class="logo" src="../assets/img/bricsa.png" />
+          <img lazyload class="logo" src="~/assets/img/bricsa.png" />
 
-          <img lazyload class="bptl" src="../assets/img/bptl.png" />
+          <img lazyload class="bptl" src="~/assets/img/bptl.png" />
         </div>
       </div>
     </div>
