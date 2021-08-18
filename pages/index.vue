@@ -144,7 +144,7 @@
               <p class="subtitle">
                 un sabor distinto
               </p>
-              <p class="downgrade">Cocinas abiertas y equipadas</p>
+              <p class="downgrade">Cocinas equipadas, con distintas distribuciones</p>
             </div>
           </div>
         </div>
@@ -292,7 +292,7 @@ export default {
   methods: {
     startAnimations: function() {
       var tl = new TimelineMax({ onUpdate: updatePercentage });
-      tl.to("#bricsa-square", 96, { top: "90%" }, 0);
+      tl.to("#bricsa-square", 110, { top: "90%" }, 0);
       tl.to("#section-bg01", 2, { left: "-100%" }, 0);
       tl.to("#section1_conectado", 3, { bottom: "100%" }, 0);
       tl.to("#section-bg02", 2, { left: "-50%" }, 1);
@@ -318,7 +318,8 @@ export default {
       tl.to("#section-05_img02", 2, { left: "0%" }, 30);
       tl.to("#section05_img-img", 6, { right: "-100%" }, 30);
       tl.to("#section05", 2, { top: "-100%" }, 38);
-      tl.to("#section06-bg", 10, { left: "-300%" }, 40);
+      tl.to("#section06-bg", 10, { left: "-400%", }, 40);
+      tl.to("#section06-bg", 2, { opacity: "0" }, 48);
       tl.to("#section06_text", 4, { opacity: "0", filter: "blur(10px)" }, 46);
       tl.to("#section06-bg02", 6, { right: "-70%" }, 50);
       tl.to("#section06_text02", 4, { opacity: "1", filter: "blur(0)" }, 52);
@@ -761,7 +762,7 @@ body {
   top: 5%;
   left: 10%;
   font-weight: 800;
-  line-height: 0.9;
+  line-height: 1.1;
   z-index: 3;
 }
 
@@ -769,7 +770,7 @@ body {
 .section03-container .section-03 .subtitle02 {
   color: #fff;
   position: absolute;
-  top: 20%;
+  top: 23%;
   font-size: 30px;
   font-weight: lighter;
   width: 70%;
@@ -990,7 +991,7 @@ body {
   top: 5%;
   left: 10%;
   font-weight: 800;
-  line-height: 0.9;
+  line-height: 1.1;
   margin: 0;
 }
 .section06-container .section-06 .subtitle {
@@ -1203,7 +1204,7 @@ right: -100%;
   font-size: 50px;
   text-align: left;
   font-weight: 800;
-  line-height: 0.9;
+  line-height: 1.1;
   opacity: 0;
   filter: blur(20px);
 }
@@ -1301,14 +1302,12 @@ right: -100%;
   }
   .section03-container .section-03 .subtitle {
     font-size: 25px;
-    bottom: 15%;
   }
   .section03-container .section-03 .section-03_02 .title02 {
     font-size: 50px;
   }
   .section03-container .section-03 .subtitle02 {
     font-size: 25px;
-    bottom: 15%;
   }
   .section05-container .section-05 .title {
     font-size: 50px;
